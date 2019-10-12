@@ -28,7 +28,7 @@ import java.util.UUID;
 
 import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.assertThat;
-
+// This is for checking stash
 public class JsonPathTest {
 
     private final String JSON = "{ \"store\": {\n" +
@@ -769,5 +769,6 @@ public class JsonPathTest {
 
         // Then
         assertThat(jsonPath.getString("some-list[0]"), equalTo("one"));
+
     }
 }
